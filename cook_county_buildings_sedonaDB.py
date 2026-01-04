@@ -36,7 +36,7 @@ WHERE
 """).to_pandas()
 print("extracted cook county buildings, now projecting to state plane and saving to geopackage")
 
-output_path = '/Users/mattlayman/Downloads/test.gpkg'
+output_path = '/path/to/file.gpkg'
 
 try:
     projected_cc = cc.to_crs("EPSG:3435")

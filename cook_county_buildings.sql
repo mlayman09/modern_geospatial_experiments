@@ -30,6 +30,6 @@ COPY(
             geometry,
             CAST(getvariable('cook_county_wkt') AS GEOMETRY))
     )
-TO '/Users/mattlayman/Downloads/test.gpkg' 
+TO '/path/to/file.gpkg' 
 WITH (FORMAT GDAL, DRIVER 'GPKG');
 
