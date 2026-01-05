@@ -33,7 +33,7 @@ duckdb -init cook_county_buildings.sql
 
 Geospatial tools keep getting better, and it's pretty incredible what we can do nowadays. I've been hearing about DuckDB for a while through various channels, and SedonaDB got released this fall, so I decided to check them out for myself and see how they perform.
 
-Let's say you want to download building footprints for your county. You used to have to download an entire file that likely covered an area much larger than your area of interest, and then transform it later in a desktop GIS or with a python script. Now, with tools like DuckDB and file formats like GeoParquet, I can write a SQL script (or Python script containing SQL) to download just what I need and nothing more. I can clip those building footprints to a county boundary, reproject them if needed, keep only the columns of data I'm interested in, and then download the results to my machine, all in one script. No massive initial download required- that alone is a big step forward in my view.
+Let's say you want to download building footprints for your county. You used to have to download an entire file that likely covered an area much larger than your area of interest, and then transform it later in a desktop GIS or with a python script. Now, with tools like DuckDB and file formats like GeoParquet, I can write a script to download just what I need and nothing more. I can clip those building footprints to a county boundary, reproject them if needed, keep only the columns of data I'm interested in, and then download the results to my machine, all in one script. No massive initial download required- that alone is a big step forward in my view.
 
 
 
